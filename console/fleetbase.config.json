@@ -1,3 +1,7 @@
 {
-    "API_HOST": "http://localhost:8000"
+  "API_HOST": "https://api-fleetbase.codedoc.com.mx",
+  "SOCKETCLUSTER_HOST": "fleetbase.codedoc.com.mx",
+  "SOCKETCLUSTER_PORT": "38000",
+  "SOCKETCLUSTER_SECURE": "false"
 }
+
