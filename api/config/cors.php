@@ -1,9 +1,6 @@
 <?php
 
-use Fleetbase\Support\Utils;
-
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Cross-Origin Resource Sharing (CORS) Configuration
@@ -21,7 +18,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => array_filter(['http://localhost:4200', env('CONSOLE_HOST'), Utils::addWwwToUrl(env('CONSOLE_HOST')), ...Utils::arrayFrom(env('FRONTEND_HOSTS', ''))]),
+    'allowed_origins' => ['*'],
 
     'allowed_origins_patterns' => [],
 

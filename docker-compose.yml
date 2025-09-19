@@ -83,5 +83,8 @@ services:
       dockerfile: docker/httpd/Dockerfile
     ports:
       - "8000:80"
+      - "8443:443" # Puerto para HTTPS
+    volumes:
+      - ./certs:/etc/ssl/certs # Monta los certificados
     depends_on:
       - application
