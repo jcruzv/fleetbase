@@ -44,7 +44,6 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     depends_on:
-      - database
       - cache
 
   queue:
@@ -65,7 +64,6 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     depends_on:
-        - database
         - cache
 
   console:
@@ -98,7 +96,6 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     depends_on:
-      - database
       - cache
       - queue
 
