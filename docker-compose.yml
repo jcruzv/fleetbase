@@ -1,19 +1,13 @@
 services:
   cache:
     image: redis:4-alpine
-    services:
-      cache:
-        image: redis:4-alpine
-        healthcheck:
-          test: ["CMD", "redis-cli", "ping"]
-          interval: 10s
-          timeout: 5s
-          retries: 5
-      REDIS_URL: tcp://cache
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     extra_hosts:
       - "host.docker.internal:host-gateway"
-    depends_on:
-      - cache
 
   queue:
     image: fleetbase/fleetbase-api:latest
