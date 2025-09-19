@@ -35,12 +35,14 @@ services:
     image: fleetbase/fleetbase-api:latest
     command: ["go-crond", "--verbose", "root:./crontab"]
     environment:
-      DATABASE_URL: "mysql://root@database/fleetbase"
+      DATABASE_URL: "mysql://fleetbase@host.docker.internal/fleetbase"
       QUEUE_CONNECTION: redis
       CACHE_DRIVER: redis
       CACHE_PATH: /fleetbase/api/storage/framework/cache
       CACHE_URL: tcp://cache
       REDIS_URL: tcp://cache
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       - database
       - cache
@@ -54,12 +56,14 @@ services:
       timeout: 10s
       retries: 3
     environment:
-      DATABASE_URL: "mysql://root@database/fleetbase"
+      DATABASE_URL: "mysql://fleetbase@host.docker.internal/fleetbase"
       QUEUE_CONNECTION: redis
       CACHE_DRIVER: redis
       CACHE_PATH: /fleetbase/api/storage/framework/cache
       CACHE_URL: tcp://cache
       REDIS_URL: tcp://cache
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
         - database
         - cache
@@ -77,7 +81,7 @@ services:
       - ./api/.env:/fleetbase/api/.env
     environment:
       ENVIRONMENT: development
-      DATABASE_URL: "mysql://root@database/fleetbase"
+      DATABASE_URL: "mysql://fleetbase@host.docker.internal/fleetbase"
       QUEUE_CONNECTION: redis
       CACHE_DRIVER: redis
       CACHE_PATH: /fleetbase/api/storage/framework/cache
@@ -91,6 +95,8 @@ services:
       REGISTRY_HOST: https://registry.fleetbase.io
       REGISTRY_PREINSTALLED_EXTENSIONS: 'true'
       OSRM_HOST: https://router.project-osrm.org
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       - database
       - cache
