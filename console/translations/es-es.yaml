@@ -1,0 +1,369 @@
+app:
+  name: Fleetbase
+terms:
+  new: Nuevo
+  sort: Ordenar
+  filter: Filtrar
+  columns: Columnas
+  settings: Configuraciones
+  home: Inicio
+  admin: Administrador
+  logout: Cerrar sesión
+  dashboard: Panel de control
+  search: Buscar
+  search-input: Entrada de búsqueda
+common: 
+  confirm: Confirmar
+  edit: Editar
+  save: Guardar
+  save-changes: Guardar cambios
+  cancel: Cancelar
+  2fa-config: Configuración 2FA
+  account: Cuenta
+  admin: Administrador
+  branding: Marca
+  columns: Columnas
+  dashboard: Panel de control
+  date-of-birth: Fecha de nacimiento
+  delete: Eliminar
+  email: Correo electrónico
+  filesystem: Sistema de archivos
+  filter: Filtrar
+  home: Inicio
+  logout: Cerrar sesión
+  mail: Correo
+  name: Nombre
+  new: Nuevo
+  notification-channels: Canales de notificación
+  notifications: Notificaciones
+  organization: Organización
+  organizations: Organizaciones
+  overview: Resumen
+  phone: Tu número de teléfono
+  profile: Perfil
+  queue: Cola
+  save-button-text: Guardar cambios
+  search-input: Entrada de búsqueda
+  search: Buscar
+  services: Servicios
+  settings: Configuraciones
+  socket: Socket
+  sort: Ordenar
+  two-factor: Dos factores
+  uploading: Subiendo...
+  your-profile: Tu perfil
+  created-at: Creado en
+  country: País
+  phone-number: Número de teléfono
+  status: Estado
+  close-and-save: Cerrar y guardar
+  users: Usuarios
+  changelog: Registro de cambios
+  ok: OK
+  select-file: Seleccionar archivo
+  back: Atrás
+  next: Siguiente
+  continue: Continuar
+  done: Hecho
+  export: Exportar
+  reload: Recargar
+  reload-data: Recargar datos
+  unauthorized: No autorizado
+  unauthorized-to: No autorizado para
+  unauthorized-access: Acceso no autorizado
+  unauthorized-access-message: Acceso no autorizado, debes solicitar permisos para acceder.
+  permissions-required-for-changes: No tienes los permisos requeridos para hacer cambios.
+  push-notifications: Notificaciones push
+  role: Rol
+  timezone: Zona horaria
+component:
+  file:
+    dropdown-label: Acciones de archivo
+  import-modal:
+    loading-message: Procesando importación...
+    drop-upload: Suelta para subir
+    invalid: Inválido
+    ready-upload: listo para subir.
+    upload-spreadsheets: Subir hojas de cálculo
+    drag-drop: Arrastra y suelta archivos de hojas de cálculo en esta zona de caída
+    button-text: o selecciona hojas de cálculo para subir
+    spreadsheets: hojas de cálculo
+    upload-queue: Cola de subida
+  dropzone:
+    file: archivo
+    drop-to-upload: Suelta para subir
+    invalid: Inválido
+    files-ready-for-upload: >-
+      {numOfFiles} listos para subir.
+    upload-images-videos: Subir imágenes y videos
+    upload-documents: Subir documentos
+    upload-documents-files: Subir documentos y archivos
+    upload-avatar-files: Subir avatares personalizados
+    dropzone-supported-images-videos: Arrastra y suelta archivos de imagen y video en esta zona de caída
+    dropzone-supported-avatars: Arrastra y suelta archivos SVG o PNG
+    dropzone-supported-files: Arrastra y suelta archivos en esta zona de caída
+    or-select-button-text: o selecciona archivos para subir.
+    upload-queue: Cola de subida
+    uploading: Subiendo...
+  two-fa-enforcement-alert:
+    message: Para mejorar la seguridad de tu cuenta, tu organización requiere autenticación de dos factores (2FA). Habilita 2FA en la configuración de tu cuenta para una capa adicional de protección.
+    button-text: Configurar 2FA
+  comment-thread:
+    publish-comment-button-text: Publicar comentario
+    publish-reply-button-text: Publicar respuesta
+    reply-comment-button-text: Responder
+    edit-comment-button-text: Editar
+    delete-comment-button-text: Eliminar
+    comment-published-ago: >-
+            hace {createdAgo}
+    comment-input-placeholder: Ingresa un nuevo comentario...
+    comment-reply-placeholder: Ingresa tu respuesta...
+    comment-input-empty-notification: No puedes publicar comentarios vacíos...
+    comment-min-length-notification: El comentario debe tener al menos 2 caracteres
+  dashboard:
+    select-dashboard: Seleccionar panel de control
+    create-new-dashboard: Crear nuevo panel de control
+    create-a-new-dashboard: Crear un nuevo panel de control
+    confirm-create-dashboard: ¡Crear panel de control!
+    edit-layout: Editar diseño
+    add-widgets: Agregar widgets
+    delete-dashboard: Eliminar panel de control
+    save-dashboard: Guardar panel de control
+    you-cannot-delete-this-dashboard: No puedes eliminar este panel de control.
+    are-you-sure-you-want-delete-dashboard: ¿Estás seguro de eliminar este {dashboardName}?
+  dashboard-widget-panel:
+    widget-name: >-
+      Widget {widgetName}
+    select-widgets: Seleccionar widgets
+    close-and-save: Cerrar y guardar
+services:
+  dashboard-service:
+    create-dashboard-success-notification: Nuevo panel de control `{dashboardName}` creado exitosamente.
+    delete-dashboard-success-notification: El panel de control `{dashboardName}` fue eliminado.
+auth:
+  verification:
+    header-title: Verificación de cuenta
+    title: Verifica tu dirección de correo electrónico
+    message-text: <strong>¡Casi listo!</strong><br> Revisa tu correo electrónico para un código de verificación.
+    verification-code-text: Ingresa el código de verificación que recibiste por correo electrónico.
+    verification-input-label: Código de verificación
+    verify-button-text: Verificar y continuar
+    didnt-receive-a-code: ¿No recibiste un código aún?
+    not-sent:
+      message: ¿No recibiste un código aún?
+      alternative-choice: Usa opciones alternativas a continuación para verificar tu cuenta.
+      resend-email: Reenviar correo
+      send-by-sms: Enviar por SMS
+  two-fa:
+    verify-code:
+      verification-code: Código de verificación
+      check-title: Revisa tu correo o teléfono
+      check-subtitle: Te hemos enviado un código de verificación. Ingresa el código a continuación para completar el proceso de inicio de sesión.
+      expired-help-text: Tu código de autenticación 2FA ha expirado. Puedes solicitar otro código si necesitas más tiempo.
+      resend-code: Reenviar código
+      verify-code: Verificar código
+      cancel-two-factor: Cancelar dos factores
+      invalid-session-error-notification: Sesión inválida. Por favor, inténtalo de nuevo.
+      verification-successful-notification: ¡Verificación exitosa!
+      verification-code-expired-notification: El código de verificación ha expirado. Por favor, solicita uno nuevo.
+      verification-code-failed-notification: Verificación fallida. Por favor, inténtalo de nuevo.
+    resend-code: 
+      verification-code-resent-notification: Nuevo código de verificación enviado.
+      verification-code-resent-error-notification: Error al reenviar el código de verificación. Por favor, inténtalo de nuevo.
+  forgot-password:
+    success-message: ¡Revisa tu correo para continuar!
+    is-sent:  
+      title: ¡Casi listo!
+      message: <strong>¡Revisa tu correo!</strong><br> Te hemos enviado un enlace mágico a tu correo que te permitirá restablecer tu contraseña. El enlace expira en 15 minutos.
+    not-sent:
+      title: ¿Olvidaste tu contraseña?
+      message: <strong>No te preocupes, te tenemos cubierto.</strong><br> Ingresa el correo que usas para iniciar sesión en {appName} y te enviaremos un enlace seguro para restablecer tu contraseña.
+    form:
+      email-label: Tu dirección de correo electrónico
+      submit-button: ¡OK, envíame un enlace mágico!
+      nevermind-button: Olvídalo
+  login:
+    title: Inicia sesión en tu cuenta
+    no-identity-notification: ¿Olvidaste ingresar tu correo?
+    no-password-notification: ¿Olvidaste ingresar tu contraseña?
+    unverified-notification: Tu cuenta necesita ser verificada para continuar.
+    password-reset-required: Se requiere un restablecimiento de contraseña para continuar.
+    failed-attempt:
+      message: <strong>¿Olvidaste tu contraseña?</strong><br> Haz clic en el botón a continuación para restablecer tu contraseña.
+      button-text: ¡OK, ayúdame a restablecer!
+    form:
+      email-label: Dirección de correo electrónico
+      password-label: Contraseña
+      remember-me-label: Recuérdame
+      forgot-password-label: ¿Olvidaste tu contraseña?
+      sign-in-button: Iniciar sesión
+      create-account-button: Crear una nueva cuenta
+    slow-connection-message: Experimentando problemas de conectividad.
+  reset-password:
+    success-message: ¡Tu contraseña ha sido restablecida! Inicia sesión para continuar.
+    invalid-verification-code: Este enlace de restablecimiento de contraseña es inválido o ha expirado.
+    title: Restablece tu contraseña
+    form:
+      code:
+        label: Tu código de restablecimiento
+        help-text: El código de verificación que recibiste en tu correo.
+      password:
+        label: Nueva contraseña
+        help-text: Ingresa una contraseña de al menos 6 caracteres para continuar.
+      confirm-password:
+        label: Confirmar nueva contraseña
+        help-text: Ingresa una contraseña de al menos 6 caracteres para continuar.
+      submit-button: Restablecer contraseña
+      back-button: Atrás
+console:
+  create-or-join-organization:
+    modal-title: Crear o unirse a una organización
+    join-success-notification: ¡Te has unido a una nueva organización!
+    create-success-notification: ¡Has creado una nueva organización!
+  switch-organization:
+    modal-title: ¿Estás seguro de que quieres cambiar a la organización {organizationName}?
+    modal-body: Al confirmar, tu cuenta permanecerá iniciada, pero tu organización primaria será cambiada.
+    modal-accept-button-text: Sí, quiero cambiar de organización
+    success-notification: Has cambiado de organizaciones
+  account:
+    index: 
+      upload-new: Subir nuevo
+      phone: Tu número de teléfono.
+      photos: fotos
+      timezone: Selecciona tu zona horaria.
+  admin:
+    schedule-monitor:
+      schedule-monitor: Monitor de horarios
+      task-logs-for: >-
+        Registros de tareas para: 
+      showing-last-count: Mostrando los últimos {count} registros
+      name: Nombre
+      type: Tipo
+      timezone: Zona horaria
+      last-started: Último iniciado
+      last-finished: Último terminado
+      last-failure: Última falla
+      date: Fecha
+      memory: Memoria
+      runtime: Tiempo de ejecución
+      output: Salida
+      no-output: Sin salida
+    config:
+      database:
+        title: Configuración de base de datos
+      filesystem:
+        title: Configuración de sistema de archivos
+      mail:
+        title: Configuración de correo
+      notification-channels: 
+        title: Configuración de notificaciones push
+      queue:
+        title: Configuración de cola
+      services:
+        title: Configuración de servicios
+      socket:
+        title: Configuración de socket
+    branding:
+      title: Marca
+      icon-text: Ícono
+      upload-new: Subir nuevo
+      reset-default: Restablecer a predeterminado
+      logo-text: Logo
+      theme: Tema predeterminado
+    index:
+      total-users: Total de usuarios
+      total-organizations: Total de organizaciones
+      total-transactions: Total de transacciones
+    notifications:
+      title: Notificaciones
+      notification-settings: Configuración de notificaciones
+    organizations:
+      index:
+        title: Organizaciones
+        owner-name-column: Propietario
+        owner-phone-column: Teléfono del propietario
+        owner-email-column: Correo del propietario
+        users-count-column: Usuarios
+        phone-column: Teléfono
+        email-column: Correo
+      users:
+        title: Usuarios
+  settings:
+    index:
+      title: Configuración de organización
+      organization-name: Nombre de la organización
+      organization-description: Descripción de la organización
+      organization-phone: Número de teléfono de la organización
+      organization-currency: Moneda de la organización
+      organization-id: ID de la organización
+      organization-branding: Marca de la organización
+      logo: Logo
+      logo-help-text: Logo para tu organización.
+      upload-new-logo: Subir nuevo logo
+      backdrop: Fondo
+      backdrop-help-text: Banner opcional o imagen de fondo para tu organización.
+      upload-new-backdrop: Subir nuevo fondo
+      organization-timezone: Selecciona la zona horaria predeterminada para tu organización.
+      select-timezone: Selecciona zona horaria.
+  extensions:
+    title: ¡Las extensiones llegarán pronto!
+    message: Por favor, vuelve a revisar en las próximas versiones mientras preparamos el lanzamiento del repositorio y mercado de extensiones.
+  notifications:
+    select-all: Seleccionar todo
+    mark-as-read: Marcar como leído
+    received: >-
+        Recibido:
+    message: No hay notificaciones para mostrar.
+invite:
+  for-users:
+    invitation-message: Has sido invitado a unirte a {companyName}
+    invitation-sent-message: Has sido invitado a unirte a la organización {companyName} en {appName}. Para aceptar esta invitación, ingresa el código de invitación recibido por correo y haz clic en continuar.
+    invitation-code-sent-text: Tu código de invitación
+    accept-invitation-text: Aceptar invitación
+onboard:
+  index:
+    title: Crea tu cuenta
+    welcome-title: <strong>¡Bienvenido a {companyName}!</strong><br />
+    welcome-text: Completa los detalles requeridos a continuación para comenzar.
+    full-name: Nombre completo
+    full-name-help-text: Tu nombre completo
+    your-email: Dirección de correo electrónico
+    your-email-help-text: Tu dirección de correo electrónico
+    phone: Número de teléfono
+    phone-help-text: Tu número de teléfono
+    organization-name: Nombre de la organización
+    organization-help-text: Tu nombre de organización, todos tus servicios y recursos serán administrados bajo esta organización, luego puedes crear tantas organizaciones como quieras o necesites.
+    password: Ingresa una contraseña
+    password-help-text: Tu contraseña, asegúrate de que sea buena.
+    confirm-password: Confirma tu contraseña
+    confirm-password-help-text: Solo para confirmar la contraseña que ingresaste arriba.
+    continue-button-text: Continuar
+  verify-email:
+    header-title: Verificación de cuenta
+    title: Verifica tu dirección de correo electrónico
+    message-text: <strong>¡Casi listo!</strong><br> Revisa tu correo para un código de verificación.
+    verification-code-text: Ingresa el código de verificación que recibiste por correo.
+    verification-input-label: Código de verificación
+    verify-button-text: Verificar y continuar
+    didnt-receive-a-code: ¿No recibiste un código aún?
+    not-sent:
+      message: ¿No recibiste un código aún?
+      alternative-choice: Usa opciones alternativas a continuación para verificar tu cuenta.
+      resend-email: Reenviar correo
+      send-by-sms: Enviar por SMS
+install:
+  installer-header: Instalador
+  failed-message-sent: ¡La instalación falló! Haz clic en el botón a continuación para reintentar la instalación.
+  retry-install: Reintentar instalación
+  start-install: Iniciar instalación
+layout:
+  header:
+    menus:
+      organization:
+        settings: Configuración de organización
+        create-or-join: Crear o unirse a organizaciones
+        explore-extensions: Explorar extensiones
+      user:
+        view-profile: Ver perfil
+        keyboard-shortcuts: Mostrar atajos de teclado
+        changelog: Registro de cambios
