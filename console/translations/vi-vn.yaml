@@ -1,363 +1,369 @@
 app:
   name: Fleetbase
 terms:
-  new: Mới
-  sort: Sắp xếp
-  filter: Lọc
-  columns: Cột
-  settings: Cài đặt
-  home: Trang chủ
-  admin: Admin
-  logout: Đăng xuất
-  dashboard: Bảng điều khiển
-  search: Tìm kiếm
-  search-input: Đầu vào tìm kiếm
+  new: Nuevo
+  sort: Ordenar
+  filter: Filtrar
+  columns: Columnas
+  settings: Configuraciones
+  home: Inicio
+  admin: Administrador
+  logout: Cerrar sesión
+  dashboard: Panel de control
+  search: Buscar
+  search-input: Entrada de búsqueda
 common: 
-  confirm: Xác nhận
-  edit: Chỉnh sửa
-  save: Lưu
-  save-changes: Lưu thay đổi
-  cancel: Hủy
-  2fa-config: Cấu hình 2FA
-  account: Tài khoản
-  admin: Admin
-  branding: Thương hiệu
-  columns: Cột
-  dashboard: Bảng điều khiển
-  date-of-birth: Ngày sinh
-  delete: Xóa
-  email: Email
-  filesystem: Hệ thống tệp
-  filter: Lọc
-  home: Trang chủ
-  logout: Đăng xuất
-  mail: Mail
-  name: Tên
-  new: Mới
-  notification-channels: Kênh thông báo
-  notifications: Thông báo
-  organization: Tổ chức
-  organizations: Các tổ chức
-  overview: Tổng quan
-  phone: Số điện thoại của bạn
-  profile: Hồ sơ
-  queue: Hàng đợi
-  save-button-text: Lưu thay đổi
-  search-input: Đầu vào tìm kiếm
-  search: Tìm kiếm
-  services: Dịch vụ
-  settings: Cài đặt
+  confirm: Confirmar
+  edit: Editar
+  save: Guardar
+  save-changes: Guardar cambios
+  cancel: Cancelar
+  2fa-config: Configuración 2FA
+  account: Cuenta
+  admin: Administrador
+  branding: Marca
+  columns: Columnas
+  dashboard: Panel de control
+  date-of-birth: Fecha de nacimiento
+  delete: Eliminar
+  email: Correo electrónico
+  filesystem: Sistema de archivos
+  filter: Filtrar
+  home: Inicio
+  logout: Cerrar sesión
+  mail: Correo
+  name: Nombre
+  new: Nuevo
+  notification-channels: Canales de notificación
+  notifications: Notificaciones
+  organization: Organización
+  organizations: Organizaciones
+  overview: Resumen
+  phone: Tu número de teléfono
+  profile: Perfil
+  queue: Cola
+  save-button-text: Guardar cambios
+  search-input: Entrada de búsqueda
+  search: Buscar
+  services: Servicios
+  settings: Configuraciones
   socket: Socket
-  sort: Sắp xếp
-  two-factor: Hai yếu tố
-  uploading: Đang tải lên...
-  your-profile: Hồ sơ của bạn
-  created-at: Được tạo vào
-  country: Quốc qua
-  phone-number: Số điện thoại
-  status: Trạng thái
-  close-and-save: Đóng và Lưu
-  users: Người dùng
-  changelog: Nhật ký thay đổi
+  sort: Ordenar
+  two-factor: Dos factores
+  uploading: Subiendo...
+  your-profile: Tu perfil
+  created-at: Creado en
+  country: País
+  phone-number: Número de teléfono
+  status: Estado
+  close-and-save: Cerrar y guardar
+  users: Usuarios
+  changelog: Registro de cambios
   ok: OK
-  select-file: Chọn tệp
-  back: Quay lại
-  next: Tiếp theo
-  continue: Tiếp tục
-  done: Đã xong
-  export: Xuất
-  reload: Tải lại
-  reload-data: Tải lại dữ liệu
-  unauthorized: Không có quyền
-  unauthorized-to: Không có quyền để
-  unauthorized-access: Không có quyền truy cập
-  unauthorized-access-message: Không có quyền truy cập, bạn phải yêu cầu quyền để truy cập.
-  permissions-required-for-changes: Bạn không có quyền cần thiết để thực hiện thay đổi.
-  push-notifications: Đẩy thông báo
+  select-file: Seleccionar archivo
+  back: Atrás
+  next: Siguiente
+  continue: Continuar
+  done: Hecho
+  export: Exportar
+  reload: Recargar
+  reload-data: Recargar datos
+  unauthorized: No autorizado
+  unauthorized-to: No autorizado para
+  unauthorized-access: Acceso no autorizado
+  unauthorized-access-message: Acceso no autorizado, debes solicitar permisos para acceder.
+  permissions-required-for-changes: No tienes los permisos requeridos para hacer cambios.
+  push-notifications: Notificaciones push
+  role: Rol
+  timezone: Zona horaria
 component:
   file:
-    dropdown-label: Hành động với tệp
+    dropdown-label: Acciones de archivo
   import-modal:
-    loading-message: Đang tiến hành nhập...
-    drop-upload: Thả để tải lên
-    invalid: Không hợp lệ
-    ready-upload: sẵn sàng tải lên.
-    upload-spreadsheets: Tải lên Bảng tính
-    drag-drop: Kéo và thả các tệp bảng tính vào vùng thả này
-    button-text: hoặc chọn bảng tính để tải lên
-    spreadsheets: bảng tính
-    upload-queue: Tải lên hàng đợi
+    loading-message: Procesando importación...
+    drop-upload: Suelta para subir
+    invalid: Inválido
+    ready-upload: listo para subir.
+    upload-spreadsheets: Subir hojas de cálculo
+    drag-drop: Arrastra y suelta archivos de hojas de cálculo en esta zona de caída
+    button-text: o selecciona hojas de cálculo para subir
+    spreadsheets: hojas de cálculo
+    upload-queue: Cola de subida
   dropzone:
-    file: file
-    drop-to-upload: Thả để tải lên
-    invalid: Không hợp lệ
-    files-ready-for-upload:  >-
-      {numOfFiles} sẵn sàng tải lên.
-    upload-images-videos: Tải lên hình ảnh và video
-    upload-documents: Tải lên tài liệu
-    upload-documents-files: Tải lên tài liệu và tập tin
-    upload-avatar-files: Tải lên ảnh đại diện tùy chỉnh
-    dropzone-supported-images-videos: Kéo và thả ảnh hoặc video vào vùng thả này
-    dropzone-supported-avatars: Kéo và thả tệp SVG hoặc PNG
-    dropzone-supported-files: Kéo và thả tệp vào vùng thả này
-    or-select-button-text: hoặc chọn file để tải lên.
-    upload-queue: Tải lên hàng đợi
-    uploading: Đang tải lên...
+    file: archivo
+    drop-to-upload: Suelta para subir
+    invalid: Inválido
+    files-ready-for-upload: >-
+      {numOfFiles} listos para subir.
+    upload-images-videos: Subir imágenes y videos
+    upload-documents: Subir documentos
+    upload-documents-files: Subir documentos y archivos
+    upload-avatar-files: Subir avatares personalizados
+    dropzone-supported-images-videos: Arrastra y suelta archivos de imagen y video en esta zona de caída
+    dropzone-supported-avatars: Arrastra y suelta archivos SVG o PNG
+    dropzone-supported-files: Arrastra y suelta archivos en esta zona de caída
+    or-select-button-text: o selecciona archivos para subir.
+    upload-queue: Cola de subida
+    uploading: Subiendo...
   two-fa-enforcement-alert:
-    message: Để tăng cường bảo mật cho tài khoản của bạn, tổ chức của bạn yêu cầu Xác thực hai yếu tố (2FA). Bật 2FA trong cài đặt tài khoản của bạn để có thêm một lớp bảo vệ.
-    button-text: Cấu hình 2FA
+    message: Para mejorar la seguridad de tu cuenta, tu organización requiere autenticación de dos factores (2FA). Habilita 2FA en la configuración de tu cuenta para una capa adicional de protección.
+    button-text: Configurar 2FA
   comment-thread:
-    publish-comment-button-text: Đăng bình luận
-    publish-reply-button-text: Đăng phản hồi
-    reply-comment-button-text: Phản hồi
-    edit-comment-button-text: Chỉnh sửa
-    delete-comment-button-text: Xóa
+    publish-comment-button-text: Publicar comentario
+    publish-reply-button-text: Publicar respuesta
+    reply-comment-button-text: Responder
+    edit-comment-button-text: Editar
+    delete-comment-button-text: Eliminar
     comment-published-ago: >-
-            {createdAgo} trước
-    comment-input-placeholder: Nhập một bình luận mới...
-    comment-reply-placeholder: Nhập phản hồi của bạn...
-    comment-input-empty-notification: Bạn không thể đăng bình luận trống...
-    comment-min-length-notification: Bình luận phải chứa ít nhất 2 ký tự
+            hace {createdAgo}
+    comment-input-placeholder: Ingresa un nuevo comentario...
+    comment-reply-placeholder: Ingresa tu respuesta...
+    comment-input-empty-notification: No puedes publicar comentarios vacíos...
+    comment-min-length-notification: El comentario debe tener al menos 2 caracteres
   dashboard:
-    select-dashboard: Chọn Bảng điều khiển
-    create-new-dashboard: Tạo mới Bảng điều khiển
-    create-a-new-dashboard: Tạo mới một Bảng điều khiển
-    confirm-create-dashboard: Tạo Bảng điều khiển!
-    edit-layout: Chỉnh sửa bố cục
-    add-widgets: Thêm tiện ích
-    delete-dashboard: Xóa bảng điều khiển
-    save-dashboard: Lưu bảng điều khiển
-    you-cannot-delete-this-dashboard: Bạn không thể xóa bảng điều khiển này.
-    are-you-sure-you-want-delete-dashboard: Bạn có chắc chắn xóa {dashboardName}?
+    select-dashboard: Seleccionar panel de control
+    create-new-dashboard: Crear nuevo panel de control
+    create-a-new-dashboard: Crear un nuevo panel de control
+    confirm-create-dashboard: ¡Crear panel de control!
+    edit-layout: Editar diseño
+    add-widgets: Agregar widgets
+    delete-dashboard: Eliminar panel de control
+    save-dashboard: Guardar panel de control
+    you-cannot-delete-this-dashboard: No puedes eliminar este panel de control.
+    are-you-sure-you-want-delete-dashboard: ¿Estás seguro de eliminar este {dashboardName}?
   dashboard-widget-panel:
     widget-name: >-
-      {widgetName} Tiện ích
-    select-widgets: Chọn tiện ích
-    close-and-save: Đóng và Lưu
+      Widget {widgetName}
+    select-widgets: Seleccionar widgets
+    close-and-save: Cerrar y guardar
 services:
   dashboard-service:
-    create-dashboard-success-notification: Bảng điều khiển `{dashboardName}` đã được tạo thành công.
-    delete-dashboard-success-notification: Bảng điều khiển `{dashboardName}` đã được xóa.
+    create-dashboard-success-notification: Nuevo panel de control `{dashboardName}` creado exitosamente.
+    delete-dashboard-success-notification: El panel de control `{dashboardName}` fue eliminado.
 auth:
   verification:
-    header-title: Xác thực tài khoản
-    title: Xác thực email của bạn
-    message-text: <strong>Gần xong rồi!</strong><br> Kiểm tả email của bạn để lấy mã xác thực.
-    verification-code-text: Nhập mã xác thực bạn vừa nhận qua email.
-    verification-input-label: Mã xác thực
-    verify-button-text: Xác thực & Tiếp tục
-    didnt-receive-a-code: Chưa nhận được mã?
+    header-title: Verificación de cuenta
+    title: Verifica tu dirección de correo electrónico
+    message-text: <strong>¡Casi listo!</strong><br> Revisa tu correo electrónico para un código de verificación.
+    verification-code-text: Ingresa el código de verificación que recibiste por correo electrónico.
+    verification-input-label: Código de verificación
+    verify-button-text: Verificar y continuar
+    didnt-receive-a-code: ¿No recibiste un código aún?
     not-sent:
-      message: Chưa nhận được mã?
-      alternative-choice: Sử dụng các tùy chọn thay thế bên dưới để xác thực tài khoản của bạn.
-      resend-email: Gửi lại email
-      send-by-sms: Gửi qua SMS
+      message: ¿No recibiste un código aún?
+      alternative-choice: Usa opciones alternativas a continuación para verificar tu cuenta.
+      resend-email: Reenviar correo
+      send-by-sms: Enviar por SMS
   two-fa:
     verify-code:
-      verification-code: Mã xác thực
-      check-title: Kiểm tra email hoặc điện thoại của bạn.
-      check-subtitle: Chúng tôi đã gửi cho bạn mã xác thực. Nhập mã bên dưới để hoàn tất quá trình đăng nhập.
-      expired-help-text: Mã xác thực 2FA của bạn đã hết hạn. Bạn có thể yêu cầu mã khác nếu cần thêm thời gian.
-      resend-code: Gửi lại mã
-      verify-code: Xác thực mã
-      cancel-two-factor: Hủy 2 yếu tố
-      invalid-session-error-notification: Phiên không hợp lệ. Vui lòng thử lại.
-      verification-successful-notification: Xác thực thành công!
-      verification-code-expired-notification: Mã xác thực đã hết hạn. Vui lòng yêu cầu một mã mới.
-      verification-code-failed-notification: Xác thực thất bại. Vui lòng thử lại.
+      verification-code: Código de verificación
+      check-title: Revisa tu correo o teléfono
+      check-subtitle: Te hemos enviado un código de verificación. Ingresa el código a continuación para completar el proceso de inicio de sesión.
+      expired-help-text: Tu código de autenticación 2FA ha expirado. Puedes solicitar otro código si necesitas más tiempo.
+      resend-code: Reenviar código
+      verify-code: Verificar código
+      cancel-two-factor: Cancelar dos factores
+      invalid-session-error-notification: Sesión inválida. Por favor, inténtalo de nuevo.
+      verification-successful-notification: ¡Verificación exitosa!
+      verification-code-expired-notification: El código de verificación ha expirado. Por favor, solicita uno nuevo.
+      verification-code-failed-notification: Verificación fallida. Por favor, inténtalo de nuevo.
     resend-code: 
-      verification-code-resent-notification: Mã xác thực mới đã được gửi.
-      verification-code-resent-error-notification: Xảy ra lỗi khi gửi lại mã xác thực. Vui lòng thử lại.
+      verification-code-resent-notification: Nuevo código de verificación enviado.
+      verification-code-resent-error-notification: Error al reenviar el código de verificación. Por favor, inténtalo de nuevo.
   forgot-password:
-    success-message: Kiểm tra email của bạn để tiếp tục!
+    success-message: ¡Revisa tu correo para continuar!
     is-sent:  
-      title: Gần xong rồi!
-      message: <strong>Kiểm tra email của bạn!</strong><br> Chúng tôi đã gửi cho bạn một liên kết đến email của bạn, cho phép bạn đặt lại mật khẩu. Liên kết sẽ hết hạn sau 15 phút.
+      title: ¡Casi listo!
+      message: <strong>¡Revisa tu correo!</strong><br> Te hemos enviado un enlace mágico a tu correo que te permitirá restablecer tu contraseña. El enlace expira en 15 minutos.
     not-sent:
-      title: Quên mật khẩu?
-      message: <strong>Đừng lo lắng, chúng tôi luôn hỗ trợ bạn.</strong><br> Nhập email bạn sử dụng để đăng nhập {appName} và chúng tôi sẽ gửi cho bạn một liên kết an toàn để đặt lại mật khẩu.
+      title: ¿Olvidaste tu contraseña?
+      message: <strong>No te preocupes, te tenemos cubierto.</strong><br> Ingresa el correo que usas para iniciar sesión en {appName} y te enviaremos un enlace seguro para restablecer tu contraseña.
     form:
-      email-label: Địa chỉ email của bạn
-      submit-button: OK, Gửi cho tôi một liên kết!
-      nevermind-button: Ok
+      email-label: Tu dirección de correo electrónico
+      submit-button: ¡OK, envíame un enlace mágico!
+      nevermind-button: Olvídalo
   login:
-    title: Đăng nhập vào tài khoản của bạn
-    no-identity-notification: Bạn quên nhập email của bạn?
-    no-password-notification: Bạn quên nhập mật khẩu của bạn?
-    unverified-notification: Tài khoản của bạn cần được xác minh để tiếp tục.
+    title: Inicia sesión en tu cuenta
+    no-identity-notification: ¿Olvidaste ingresar tu correo?
+    no-password-notification: ¿Olvidaste ingresar tu contraseña?
+    unverified-notification: Tu cuenta necesita ser verificada para continuar.
+    password-reset-required: Se requiere un restablecimiento de contraseña para continuar.
     failed-attempt:
-      message: <strong>Quên mật khẩu?</strong><br> Nhấp vào nút bên dưới để đặt lại mật khẩu của bạn.
-      button-text: Được, giúp tôi thiết lập lại nhé!
+      message: <strong>¿Olvidaste tu contraseña?</strong><br> Haz clic en el botón a continuación para restablecer tu contraseña.
+      button-text: ¡OK, ayúdame a restablecer!
     form:
-      email-label: Địa chỉ email
-      password-label: Mật khẩu
-      remember-me-label: Ghi nhớ đăng nhập
-      forgot-password-label: Quên mật khẩu?
-      sign-in-button: Đăng nhập
-      create-account-button: Tạo mới tài khoản
-    slow-connection-message: Đang gặp sự cố kết nối.
+      email-label: Dirección de correo electrónico
+      password-label: Contraseña
+      remember-me-label: Recuérdame
+      forgot-password-label: ¿Olvidaste tu contraseña?
+      sign-in-button: Iniciar sesión
+      create-account-button: Crear una nueva cuenta
+    slow-connection-message: Experimentando problemas de conectividad.
   reset-password:
-    success-message: Mật khẩu của bạn đã được đặt lại! Đăng nhập để tiếp tục.
-    invalid-verification-code: Liên kết đặt lại mật khẩu này không hợp lệ hoặc đã hết hạn.
-    title: Đặt lại mật khẩu của bạn
+    success-message: ¡Tu contraseña ha sido restablecida! Inicia sesión para continuar.
+    invalid-verification-code: Este enlace de restablecimiento de contraseña es inválido o ha expirado.
+    title: Restablece tu contraseña
     form:
       code:
-        label: Mã đặt lại của bạn
-        help-text: Mã xác thực bạn đã nhận qua email.
+        label: Tu código de restablecimiento
+        help-text: El código de verificación que recibiste en tu correo.
       password:
-        label: Mật khẩu mới
-        help-text: Nhập mật khẩu ít nhất 6 ký tự để tiếp tục.
+        label: Nueva contraseña
+        help-text: Ingresa una contraseña de al menos 6 caracteres para continuar.
       confirm-password:
-        label: Xác nhận mật khẩu mới
-        help-text: Nhập mật khẩu ít nhất 6 ký tự để tiếp tục.
-      submit-button: Đặt lại mật khẩu
-      back-button: Quay lại
+        label: Confirmar nueva contraseña
+        help-text: Ingresa una contraseña de al menos 6 caracteres para continuar.
+      submit-button: Restablecer contraseña
+      back-button: Atrás
 console:
   create-or-join-organization:
-    modal-title: Tạo mới hoặc tham gia một tổ chức
-    join-success-notification: Bạn đã tham gia một tổ chức mới!
-    create-success-notification: Bạn vừa tạo ra một tổ chức mới!
+    modal-title: Crear o unirse a una organización
+    join-success-notification: ¡Te has unido a una nueva organización!
+    create-success-notification: ¡Has creado una nueva organización!
   switch-organization:
-    modal-title: Bạn có chắc chắn muốn chuyển đổi sang tổ chức {organizationName}?
-    modal-body: Bằng cách xác nhận, tài khoản của bạn sẽ vẫn được đăng nhập, nhưng tổ chức chính của bạn sẽ được chuyển đổi.
-    modal-accept-button-text: Vâng, tôi muốn chuyển đổi tổ chức
-    success-notification: Bạn đã chuyển đổi tổ chức
+    modal-title: ¿Estás seguro de que quieres cambiar a la organización {organizationName}?
+    modal-body: Al confirmar, tu cuenta permanecerá iniciada, pero tu organización primaria será cambiada.
+    modal-accept-button-text: Sí, quiero cambiar de organización
+    success-notification: Has cambiado de organizaciones
   account:
     index: 
-      upload-new: Tải lên mới
-      phone: Số điện thoại của bạn.
-      photos: ảnh
+      upload-new: Subir nuevo
+      phone: Tu número de teléfono.
+      photos: fotos
+      timezone: Selecciona tu zona horaria.
   admin:
     schedule-monitor:
-      schedule-monitor: Lịch trình giám sát
+      schedule-monitor: Monitor de horarios
       task-logs-for: >-
-        Nhật ký tác vụ cho:
-      showing-last-count: Đang hiển thị {count} nhật ký cuối
-      name: Tên
-      type: Loại
-      timezone: Múi giờ
-      last-started: Lần bắt đầu cuối
-      last-finished: Lần kết thúc cuối
-      last-failure: Lần thất bại cuối
-      date: Ngày
-      memory: Memory
-      runtime: Runtime
-      output: Đầu ra
-      no-output: Không có đầu ra
+        Registros de tareas para: 
+      showing-last-count: Mostrando los últimos {count} registros
+      name: Nombre
+      type: Tipo
+      timezone: Zona horaria
+      last-started: Último iniciado
+      last-finished: Último terminado
+      last-failure: Última falla
+      date: Fecha
+      memory: Memoria
+      runtime: Tiempo de ejecución
+      output: Salida
+      no-output: Sin salida
     config:
       database:
-        title: Cấu hình cơ sở dữ liệu 
+        title: Configuración de base de datos
       filesystem:
-        title: Cấu hình hệ thống tập tin
+        title: Configuración de sistema de archivos
       mail:
-        title: Cấu hình Mail
+        title: Configuración de correo
       notification-channels: 
-        title: Cấu hình kênh thông báo
+        title: Configuración de notificaciones push
       queue:
-        title: Cấu hình hàng đợi
+        title: Configuración de cola
       services:
-        title: Cấu hình dịch vụ
+        title: Configuración de servicios
       socket:
-        title: Cấu hình Socket
+        title: Configuración de socket
     branding:
-      title: Thương hiệu
-      icon-text: Icon
-      upload-new: Tải lên
-      reset-default: Đặt về mặc định
+      title: Marca
+      icon-text: Ícono
+      upload-new: Subir nuevo
+      reset-default: Restablecer a predeterminado
       logo-text: Logo
-      theme: Chủ đề mặc định
+      theme: Tema predeterminado
     index:
-      total-users: Tổng số người dùng
-      total-organizations: Tổng số tổ chức
-      total-transactions: Tổng số giao dịch
+      total-users: Total de usuarios
+      total-organizations: Total de organizaciones
+      total-transactions: Total de transacciones
     notifications:
-      title: Thông báo
-      notification-settings: Cài đặt thông báo
+      title: Notificaciones
+      notification-settings: Configuración de notificaciones
     organizations:
       index:
-        title: Tổ chức
-        owner-name-column: Người sở hữu
-        owner-phone-column: Điện thoại chủ sở hữu
-        owner-email-column: Email chủ sở hữu
-        users-count-column: Người dùng
-        phone-column: Số điện thoại
-        email-column: Email
+        title: Organizaciones
+        owner-name-column: Propietario
+        owner-phone-column: Teléfono del propietario
+        owner-email-column: Correo del propietario
+        users-count-column: Usuarios
+        phone-column: Teléfono
+        email-column: Correo
       users:
-        title: Người dùng
+        title: Usuarios
   settings:
     index:
-      title: Cài đặt tổ chức
-      organization-name: Tên tổ chức
-      organization-description: Mô tả
-      organization-phone: Số điện thoại
-      organization-currency: Tiền tệ
-      organization-id: ID
-      organization-branding: Thương hiệu
+      title: Configuración de organización
+      organization-name: Nombre de la organización
+      organization-description: Descripción de la organización
+      organization-phone: Número de teléfono de la organización
+      organization-currency: Moneda de la organización
+      organization-id: ID de la organización
+      organization-branding: Marca de la organización
       logo: Logo
-      logo-help-text: Logo cho tổ chức của bạn..
-      upload-new-logo: Tải lên logo mới
-      backdrop: Phông nền
-      backdrop-help-text: Biểu ngữ hoặc hình ảnh nền tùy chọn cho tổ chức của bạn.
-      upload-new-backdrop: Tải lên phông nền mới
+      logo-help-text: Logo para tu organización.
+      upload-new-logo: Subir nuevo logo
+      backdrop: Fondo
+      backdrop-help-text: Banner opcional o imagen de fondo para tu organización.
+      upload-new-backdrop: Subir nuevo fondo
+      organization-timezone: Selecciona la zona horaria predeterminada para tu organización.
+      select-timezone: Selecciona zona horaria.
   extensions:
-    title: Các tiện ích mở rộng sẽ sớm ra mắt!
-    message: Vui lòng kiểm tra lại trong các phiên bản sắp tới khi chúng tôi chuẩn bị ra mắt kho lưu trữ và thị trường Tiện ích mở rộng.
+    title: ¡Las extensiones llegarán pronto!
+    message: Por favor, vuelve a revisar en las próximas versiones mientras preparamos el lanzamiento del repositorio y mercado de extensiones.
   notifications:
-    select-all: Chọn tất cả
-    mark-as-read: Đánh dấu là đã đọc
+    select-all: Seleccionar todo
+    mark-as-read: Marcar como leído
     received: >-
-        Đã nhận:
-    message: Không có thông báo nào để hiển thị.
+        Recibido:
+    message: No hay notificaciones para mostrar.
 invite:
   for-users:
-    invitation-message: Bạn đã được mời tham gia {companyName}
-    invitation-sent-message: Bạn đã được mời tham gia tổ chức {companyName} trên {appName}. Để chấp nhận lời mời này, hãy nhập mã mời nhận được qua email và nhấp vào tiếp tục.
-    invitation-code-sent-text: Mã mời của bạn
-    accept-invitation-text: Chấp nhận lời mời
+    invitation-message: Has sido invitado a unirte a {companyName}
+    invitation-sent-message: Has sido invitado a unirte a la organización {companyName} en {appName}. Para aceptar esta invitación, ingresa el código de invitación recibido por correo y haz clic en continuar.
+    invitation-code-sent-text: Tu código de invitación
+    accept-invitation-text: Aceptar invitación
 onboard:
   index:
-    title: Tạo tài khoản mới
-    welcome-title: <strong>Chào mừng tới {companyName}!</strong><br />
-    welcome-text: Hoàn tất các thông tin yêu cầu bên dưới để bắt đầu.
-    full-name: Tên đầy đủ
-    full-name-help-text: Tên đầy đủ của bạn
-    your-email: Địa chỉ email
-    your-email-help-text: Địa chỉ email của bạn
-    phone: Số điện thoại
-    phone-help-text: Số điện thoại của bạn
-    organization-name: Tên tổ chức
-    organization-help-text: Tên tổ chức của bạn, tất cả các dịch vụ và tài nguyên của bạn sẽ được quản lý theo tổ chức này, sau đó bạn có thể tạo nhiều tổ chức tùy ý hoặc theo nhu cầu.
-    password: Nhập mật khẩu
-    password-help-text: Mật khẩu của bạn phải an toàn.
-    confirm-password: Xác nhận mật khẩu của bạn
-    confirm-password-help-text: Chỉ để xác nhận mật khẩu bạn đã nhập ở trên.
-    continue-button-text: Tiếp tục
+    title: Crea tu cuenta
+    welcome-title: <strong>¡Bienvenido a {companyName}!</strong><br />
+    welcome-text: Completa los detalles requeridos a continuación para comenzar.
+    full-name: Nombre completo
+    full-name-help-text: Tu nombre completo
+    your-email: Dirección de correo electrónico
+    your-email-help-text: Tu dirección de correo electrónico
+    phone: Número de teléfono
+    phone-help-text: Tu número de teléfono
+    organization-name: Nombre de la organización
+    organization-help-text: Tu nombre de organización, todos tus servicios y recursos serán administrados bajo esta organización, luego puedes crear tantas organizaciones como quieras o necesites.
+    password: Ingresa una contraseña
+    password-help-text: Tu contraseña, asegúrate de que sea buena.
+    confirm-password: Confirma tu contraseña
+    confirm-password-help-text: Solo para confirmar la contraseña que ingresaste arriba.
+    continue-button-text: Continuar
   verify-email:
-    header-title: Xác thực tài khoản
-    title: Xác thực địa chỉ email của bạn
-    message-text: <strong>Gần xong rồi!</strong><br> Kiêm tra mã xác thực trong email của bạn.
-    verification-code-text: Nhập mã xác thực bạn vừa nhận qua email.
-    verification-input-label: Mã xác thực
-    verify-button-text: Xác thực & Tiếp tục
-    didnt-receive-a-code: Bạn vẫn chưa nhận được mã?
+    header-title: Verificación de cuenta
+    title: Verifica tu dirección de correo electrónico
+    message-text: <strong>¡Casi listo!</strong><br> Revisa tu correo para un código de verificación.
+    verification-code-text: Ingresa el código de verificación que recibiste por correo.
+    verification-input-label: Código de verificación
+    verify-button-text: Verificar y continuar
+    didnt-receive-a-code: ¿No recibiste un código aún?
     not-sent:
-      message: Bạn vẫn chưa nhận được mã?
-      alternative-choice: Sử dụng các tùy chọn thay thế bên dưới để xác thực tài khoản của bạn.
-      resend-email: Gửi lại
-      send-by-sms: Gửi qua SMS
+      message: ¿No recibiste un código aún?
+      alternative-choice: Usa opciones alternativas a continuación para verificar tu cuenta.
+      resend-email: Reenviar correo
+      send-by-sms: Enviar por SMS
 install:
-  installer-header: Trình cài đặt
-  failed-message-sent: Cài đặt thất bại! Nhấp vào nút bên dưới để thử cài đặt lại.
-  retry-install: Thử lại cài đặt
-  start-install: Bắt đầu cài đặt
+  installer-header: Instalador
+  failed-message-sent: ¡La instalación falló! Haz clic en el botón a continuación para reintentar la instalación.
+  retry-install: Reintentar instalación
+  start-install: Iniciar instalación
 layout:
   header:
     menus:
       organization:
-        settings: Cài đặt tổ chức
-        create-or-join: Tạo mới hoặc tham gia một tổ chức
-        explore-extensions: Khám phá phần mở rộng
+        settings: Configuración de organización
+        create-or-join: Crear o unirse a organizaciones
+        explore-extensions: Explorar extensiones
       user:
-        view-profile: Xem hồ sơ
-        keyboard-shortcuts: Hiển thị phím tắt
-        changelog: Nhật ký thay đổi
+        view-profile: Ver perfil
+        keyboard-shortcuts: Mostrar atajos de teclado
+        changelog: Registro de cambios
